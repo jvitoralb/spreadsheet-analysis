@@ -13,10 +13,12 @@ Para a leitura das planilhas foi utilizado a biblioteca `Exceljs`.
 # na pasta raiz
 $ npm run build:app
 
-# na pasta frontend/
-$ npm install
+# ou
 
-# na pasta backend/
+$ cd frontend
+$ npm install
+$ cd ..
+$ cd backend
 $ npm install
 ```
 
@@ -29,6 +31,19 @@ $ npm run dev
 $ npm run start:dev
 ```
 ## Docker for development
+
+1. Crie as imagens
+```
+# imagem do client
+$ cd frontend
+$ docker build -t sa-client .
+
+# imagem do server
+$ cd backend
+$ docker build -t sa-server .
+```
+
+2. Inicie a aplicação
 ```
 # start application with docker engine
 $ docker compose up -d
