@@ -1,0 +1,14 @@
+{
+  "name": "ps-copybase",
+  "version": "1.0.0",
+  "description": "Uma aplicação web fullstack que faz o cálculo de indicadores financeiros baseado-se em planilhas, e faz a demonstração desses dados utilizando gráficos.",
+  "main": "index.js",
+  "scripts": {
+    "build:app": "npm install --prefix backend && npm install --prefix frontend",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
